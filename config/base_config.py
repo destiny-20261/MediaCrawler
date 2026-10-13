@@ -25,9 +25,9 @@ PLATFORM = "xhs"  # Platform, xhs | dy | ks | bili | wb | tieba | zhihu
 XHS_INTERNATIONAL = False
 
 KEYWORDS = "编程副业,编程兼职"  # Keyword search configuration, separated by English commas
-LOGIN_TYPE = "qrcode"  # qrcode or phone or cookie
-COOKIES = ""
-CRAWLER_TYPE = (
+import os
+LOGIN_TYPE = "cookie"
+COOKIES = os.environ.get("XHS_COOKIES", "")CRAWLER_TYPE = (
     "search"  # Crawling type, search (keyword search) | detail (post details) | creator (creator homepage data)
 )
 # Whether to enable IP proxy
