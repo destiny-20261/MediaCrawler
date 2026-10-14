@@ -27,7 +27,8 @@ XHS_INTERNATIONAL = False
 KEYWORDS = "编程副业,编程兼职"  # Keyword search configuration, separated by English commas
 import os
 LOGIN_TYPE = "cookie"
-COOKIES = os.environ.get("XHS_COOKIES", "")CRAWLER_TYPE = (
+COOKIES = os.environ.get("XHS_COOKIES", "")
+CRAWLER_TYPE = (
     "search"  # Crawling type, search (keyword search) | detail (post details) | creator (creator homepage data)
 )
 # Whether to enable IP proxy
